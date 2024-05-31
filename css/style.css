@@ -17,3 +17,25 @@
 body{
     background-color: var(--background-main);
 }
+
+.empty-box1{
+height: 150px;
+}
+
+
+
+.profile{
+    height: 80%;
+    width: 45%;
+    border-radius: 50%;
+    margin-left: 100px;
+}
+
+
+.box1{
+    height: 300px;
+    }
+
+.last-words{
+        color: rgb(60, 108, 240);
+    }
