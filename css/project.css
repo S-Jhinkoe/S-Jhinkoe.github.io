@@ -17,3 +17,7 @@
 body{
     background-color: var(--background-main);
 }
+
+a:hover{
+    opacity: 30%;
+}
