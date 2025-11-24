@@ -1,23 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-   
 }
 
-:root{
-   --background-main: rgb(171, 177, 245);
+:root {
+    --background-main: rgb(148, 212, 255);
 }
 
-.bg{
+.bg {
     background-image: linear-gradient(blue, black);
 }
 
-body{
+body {
     background-color: var(--background-main);
 }
 
-a:hover{
+a:hover {
     opacity: 30%;
+}
+
+
+.project-img {
+    width: 100%;      
+    height: 350px;      
+    object-fit: cover;  
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; 
 }
