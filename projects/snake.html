@@ -1,72 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Snake | Project</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/all-projects.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg">
-        <a href="" class="navbar-brand fs-1 ms-3 text-white">Snake</a>
 
-        <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
-            <i class='bx bx-menu  bx-md text-white fs-1'></i>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark nav-gradient px-3 py-3">
+        <a class="navbar-brand fs-2 fw-bold" href="#">Snake</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <i class='bx bx-menu bx-md text-white'></i>
         </button>
-        <div class="collapse navbar-collapse" id="btn">
+
+        <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="/index.html" class=" nav-link fs-3 mx-5 text-white">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/contacts.html" class=" nav-link fs-3 mx-5 text-white">Contacts</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/project.html" class=" nav-link fs-3 mx-5 text-white">Projects</a>
-                </li>
+                <li class="nav-item"><a href="/index.html" class="nav-link fs-5 mx-3">Home</a></li>
+                <li class="nav-item"><a href="/contacts.html" class="nav-link fs-5 mx-3">Contacts</a></li>
+                <li class="nav-item"><a href="/project.html" class="nav-link fs-5 mx-3">Projects</a></li>
             </ul>
         </div>
     </nav>
-    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="container-fluid">
-        <div class="row mt-4">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-                <article>
-                    <h1 class="text-center">Snake</h1>
-                    <p class="text-center fs-5">
-                        Dit was mijn tweede themaweek waarbij ik zelf een spel moest bedenken dat ik zou maken. Ik kreeg
-                        één schoolweek de tijd om eraan te werken. Ik koos voor het spel Snake omdat het een leuk
-                        project leek en niet al te moeilijk was, maar waar ik wel wat nieuws van kon leren. Het doel van
-                        het spel is om de blokjes op te pakken zodat je groeit, maar als je je eigen lichaam raakt ga je
-                        af of als je uit het veld gaat.​</p>
-                </article>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
 
-        <div class="row mt-5">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 mt-3">
-                <article class="text-center">
-                    <img src="/img/Snake.png" class="img-fluid img-thumbnail w-75" alt="">
-                </article>
-                <article class="text-center">
-                    <a class="btn btn-primary mt-2 fs-4" href=" https://s-jhinkoe.github.io/themaweek/"
-                        role="button">Click Here</a>
-                </article>
-            </div>
-            <div class="col-md-3"></div>
-        </div>
+    <!-- TERUG KNOP -->
+    <div class="container text-start mt-4">
+        <a href="/project.html" class="btn btn-main btn-sm">
+            <i class='bx bx-arrow-back'></i> Terug naar Projects
+        </a>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header text-center">
+        <div class="container">
+            <h1 class="fw-bold">Snake</h1>
+            <p class="text-muted mt-2 fs-5">
+                Dit project heb ik gemaakt tijdens mijn tweede themaweek. Ik kreeg één schoolweek de tijd om een
+                eigen game te bedenken en te bouwen. Ik koos voor het klassieke spel Snake, waarin je blokjes moet
+                verzamelen om te groeien. Raak je je eigen lichaam of ga je uit het veld, dan ben je af. Dit project
+                hielp mij nieuwe vaardigheden in JavaScript en spelontwikkeling te leren.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJECT IMAGE & SPEEL BUTTON -->
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <img src="/img/Snake.png" class="project-img rounded shadow" alt="Snake Project">
+                <div class="mt-3">
+                    <a class="btn btn-main btn-lg" href="https://s-jhinkoe.github.io/themaweek/" target="_blank">
+                        Speel Snake
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-3 footer">
+        © 2025 Shayan Jhinkoe – Projectpagina
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
