@@ -1,79 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Contact | Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/contacts.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg">
-        <a href="" class="navbar-brand fs-1 ms-3 text-white">Contacts</a>
 
-        <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
-            <i class='bx bx-menu  bx-md text-white fs-1'></i>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark nav-gradient px-3 py-3">
+        <a href="#" class="navbar-brand fs-2 fw-bold">Contact</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <i class='bx bx-menu bx-md text-white'></i>
         </button>
-        <div class="collapse navbar-collapse" id="btn">
+
+        <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="index.html" class=" nav-link fs-3 mx-5 text-white">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="portfolio.html" class=" nav-link fs-3 mx-5 text-white">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="project.html" class=" nav-link fs-3 mx-5 text-white">Projects</a>
-                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link fs-5 mx-3">Home</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link fs-5 mx-3">Portfolio</a></li>
+                <li class="nav-item"><a href="project.html" class="nav-link fs-5 mx-3">Projects</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link fs-5 mx-3">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5 p-5">
-                    <h1 class="p-3 m-4">Contact Gegevens</h1>
-                    <h4>Naam: Shayan Jhinkoe</h4>
-                    <h4>Leeftijd: 18 jaar</h4>
-                    <h4>School: ROC Mondriaan Brasserskade</h4>
-                    <h4>School adres: Brasserskade 1</h4>
-                    <h4>Woonplaats: Den Haag</h4>
-                </div>
-                <div class="col-md-7 mt-5">
-                    <h2 class="text-center">Linked In Page</h2>
-                    <article> <img class="img-fluid img-thumbnail border-5 border-primary linkedin"
-                            src="/img/linkedin.png" alt="" />
-                        <div class="text-center">
-                            <a class="btn btn-primary mt-3"
-                                href="https://www.linkedin.com/in/shayanjhinkoe"
-                                role="button">Click Here</a>
-                        </div>
-                    </article>
+    <!-- HEADER -->
+    <section class="page-header text-center">
+        <div class="container">
+            <h1 class="fw-bold">Contact Gegevens</h1>
+            <p class="text-muted mt-2">Neem contact op of bekijk mijn LinkedIn-profiel</p>
+        </div>
+    </section>
+
+    <main class="container py-5">
+
+        <div class="row g-4">
+
+            <!-- CONTACT INFO CARD -->
+            <div class="col-md-6">
+                <div class="info-card p-4">
+                    <h2 class="mb-3">Persoonlijke Informatie</h2>
+                    <ul class="contact-list">
+                        <li><i class='bx bx-user'></i> Naam: <strong>Shayan Jhinkoe</strong></li>
+                        <li><i class='bx bx-cake'></i> Leeftijd: <strong>18 jaar</strong></li>
+                        <li><i class='bx bx-building'></i> School: ROC Mondriaan Brasserskade</li>
+                        <li><i class='bx bx-map'></i> School Adres: Brasserskade 1, Den Haag</li>
+                        <li><i class='bx bx-home'></i> Woonplaats: Den Haag</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-4">
-                    <article class="brasserskade">
-                        <img src="/img/brasserskade img.jpg" class="img-fluid img-thumbnail border-4 border-dark" alt="brasserskade">
-                    </article>
+            <!-- LINKEDIN CARD -->
+            <div class="col-md-6">
+                <div class="linkedin-card text-center p-4">
+                    <h2 class="mb-3">LinkedIn</h2>
+                    <img class="linkedin-img img-fluid rounded" src="img/linkedin.png" alt="LinkedIn">
+                    <a class="btn btn-main mt-3"
+                        href="https://www.linkedin.com/in/shayanjhinkoe"
+                        target="_blank">Bezoek mijn LinkedIn</a>
                 </div>
             </div>
         </div>
+
+        <!-- SCHOOL BUILDING -->
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="image-card p-3">
+                    <h3 class="text-center mb-3">School Locatie</h3>
+                    <img src="img/brasserskade img.jpg" class="img-fluid rounded shadow" alt="Brasserskade">
+                </div>
+            </div>
+        </div>
+
     </main>
 
+    <footer class="text-center py-3 footer">
+        © 2025 Shayan Jhinkoe – Contactpagina
+    </footer>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

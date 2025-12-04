@@ -1,32 +1,97 @@
+/* ----------------------------- */
+/* GLOBAL */
+/* ----------------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --background-main: rgb(148, 212, 255);
-}
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --text-light: #d9e1ff;
+    --text-muted: #8892b0;
 
-.bg {
-    background-image: linear-gradient(blue, black);
+    --primary: #4361ee;
+    --primary-alt: #3a0ca3;
+    --accent: #4cc9f0;
 }
 
 body {
-    background-color: var(--background-main);
+    background: var(--bg-main);
+    color: var(--text-light);
 }
 
-a:hover {
-    opacity: 30%;
+/* ----------------------------- */
+/* NAVBAR */
+/* ----------------------------- */
+
+.nav-gradient {
+    background: linear-gradient(135deg, var(--primary-alt), var(--primary));
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
+.nav-link {
+    color: var(--text-light) !important;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+}
+
+/* ----------------------------- */
+/* HEADER */
+/* ----------------------------- */
+
+.page-header {
+    padding: 60px 20px;
+    background: radial-gradient(circle, rgba(67,97,238,0.2), transparent 70%);
+}
+
+/* ----------------------------- */
+/* PROJECT CARDS */
+/* ----------------------------- */
+
+.project-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 18px rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(76,201,240,0.25);
+}
 
 .project-img {
-    width: 100%;      
-    height: 350px;      
-    object-fit: cover;  
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px; 
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ----------------------------- */
+/* FOOTER */
+/* ----------------------------- */
+
+.footer {
+    background: var(--bg-card);
+    color: var(--text-muted);
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ----------------------------- */
+/* RESPONSIVE */
+/* ----------------------------- */
+
+@media (max-width: 768px) {
+    .project-img {
+        height: 200px;
+    }
 }

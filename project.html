@@ -1,81 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Projects | Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/project.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg">
-        <a href="" class="navbar-brand fs-1 ms-3 text-white">Projects</a>
 
-        <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
-            <i class='bx bx-menu  bx-md text-white fs-1'></i>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark nav-gradient px-3 py-3">
+        <a class="navbar-brand fs-2 fw-bold" href="#">Projects</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <i class='bx bx-menu bx-md text-white'></i>
         </button>
-        <div class="collapse navbar-collapse" id="btn">
+
+        <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="index.html" class=" nav-link fs-3 mx-5 text-white">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="portfolio.html" class=" nav-link fs-3 mx-5 text-white">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contacts.html" class=" nav-link fs-3 mx-5 text-white">Contacts</a>
-                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link fs-5 mx-3">Home</a></li>
+                <li class="nav-item"><a href="portfolio.html" class="nav-link fs-5 mx-3">Portfolio</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link fs-5 mx-3">Contacts</a></li>
             </ul>
         </div>
     </nav>
-    <!------------------------------------Einde Navbar-------------------------------------------------------->
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12 mt-5"></div>
+    <!-- PAGE HEADER -->
+    <section class="page-header text-center">
+        <div class="container">
+            <h1 class="fw-bold">Mijn Projecten</h1>
+            <p class="text-muted mt-2">Klik op een project voor meer informatie</p>
         </div>
+    </section>
 
-        <div class="row text-center">
+    <!-- PROJECT CARDS -->
+    <main class="container py-5">
+        <div class="row g-4 justify-content-center">
+
             <div class="col-md-4">
-                <h2>Whack a Mole</h2>
-                <article>
+                <div class="project-card p-3">
+                    <h2 class="text-center mb-3">Whack a Mole</h2>
                     <a href="projects/wam.html">
-                        <img src="img/wam.png" class="project-img" alt="">
+                        <img src="img/wam.png" class="project-img rounded shadow" alt="Whack a Mole">
                     </a>
-                </article>
-                <p>Klik op de foto voor meer info</p>
+                    <p class="text-center mt-2">Klik op de foto voor meer info</p>
+                </div>
             </div>
 
             <div class="col-md-4">
-                <h2>Snake</h2>
-                <article>
+                <div class="project-card p-3">
+                    <h2 class="text-center mb-3">Snake</h2>
                     <a href="projects/snake.html">
-                        <img src="img/Snake.png" class="project-img" alt="">
+                        <img src="img/Snake.png" class="project-img rounded shadow" alt="Snake">
                     </a>
-                </article>
-                <p>Klik op de foto voor meer info</p>
+                    <p class="text-center mt-2">Klik op de foto voor meer info</p>
+                </div>
             </div>
 
             <div class="col-md-4">
-                <h2>Mario</h2>
-                <article>
+                <div class="project-card p-3">
+                    <h2 class="text-center mb-3">Mario</h2>
                     <a href="projects/mario.html">
-                        <img src="img/Mario.png" class="project-img" alt="">
+                        <img src="img/Mario.png" class="project-img rounded shadow" alt="Mario">
                     </a>
-                </article>
-                <p>Klik op de foto voor meer info</p>
+                    <p class="text-center mt-2">Klik op de foto voor meer info</p>
+                </div>
             </div>
+
         </div>
+    </main>
 
-    </div>
+    <!-- FOOTER -->
+    <footer class="text-center py-3 footer">
+        © 2025 Shayan Jhinkoe – Projecten
+    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

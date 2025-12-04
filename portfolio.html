@@ -1,97 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Portfolio – Eerste Schooljaar</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/portfolio.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Document</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md bg">
-        <a href="" class="navbar-brand fs-1 ms-3 text-white">Portfolio</a>
 
-        <button class="navbar-toggler me-3 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#btn">
-            <i class='bx bx-menu  bx-md text-white fs-1'></i>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-dark nav-gradient px-3 py-3">
+        <a class="navbar-brand fs-2 fw-bold" href="#">Portfolio</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <i class='bx bx-menu bx-md text-white'></i>
         </button>
-        <div class="collapse navbar-collapse" id="btn">
+
+        <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="index.html" class=" nav-link fs-3 mx-5 text-white">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="contacts.html" class=" nav-link fs-3 mx-5 text-white">Contacts</a>
-                </li>
-                <li class="nav-item">
-                    <a href="project.html" class=" nav-link fs-3 mx-5 text-white">Projects</a>
-                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link fs-5 mx-3">Home</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link fs-5 mx-3">Contact</a></li>
+                <li class="nav-item"><a href="project.html" class="nav-link fs-5 mx-3">Projects</a></li>
+                 <li class="nav-item"><a href="portfolio.html" class="nav-link fs-5 mx-3">Portfolio</a></li>
             </ul>
         </div>
     </nav>
-    <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-    <div class="container-fluid">
+
+    <!-- HEADER -->
+    <section class="page-header text-center">
+        <div class="container">
+            <h1 class="fw-bold">Portfolio – Eerste Schooljaar</h1>
+            <p class="text-muted mt-2">Overzicht van hoe mijn eerste portfolio tot stand kwam</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <div class="container py-5">
         <div class="row">
-            <div class="col-md-5 p-2">
-                <article>
-                    <h1 class="p-3 m-4">Portfolio</h1>
+
+            <!-- TEXT -->
+            <div class="col-md-6 mb-5">
+                <div class="info-card p-4">
+                    <h2 class="mb-3">Hoe dit portfolio ontstond</h2>
                     <p>
-                        Ik heb dit schooljaar in periode 2, 3 en 4 aan mijn portfolio gewerkt. In periode 2 moesten we
-                        aan het functioneel ontwerp werken. Hierbij moest je kijken hoe je het portfolio zou gaan maken,
-                        zoals het maken van een mockup, het opstellen van een kleurenschema en een bestand met het
-                        gekozen lettertype. In de mockup geef je weer hoe je je portfolio wilt gaan maken.
-
-                        In periode 3 gingen we de daadwerkelijke code schrijven om je mockup in code om te zetten, en
-                        dat moest je daarna presenteren. Nu zijn we bezig met periode 4 en proberen we het portfolio
-                        beter te maken dan de vorige versie.
+                        Dit portfolio werd gemaakt in mijn <strong>eerste schooljaar</strong>.  
+                        In periode 2 begonnen we met het functioneel ontwerp: een mockup, kleurenschema en typografie.
+                        Alles werd ontworpen zodat ik precies wist hoe mijn website eruit zou komen te zien.
                     </p>
-
-                </article>
+                    <p>
+                        In periode 3 begon het echte werk: het bouwen van de website.  
+                        Hierbij zette ik mijn mockup om in HTML, CSS en Bootstrap, en presenteerde ik mijn ontwerp.
+                    </p>
+                    <p>
+                        Nu in periode 4 verbeter ik de website, maak ik het ontwerp professioneler en zorg ik ervoor dat
+                        alles modern, netjes en responsive is.
+                    </p>
+                </div>
             </div>
-            <div class="col-md-7 mt-5">
-                <h2 class="text-center">Kleurenschema</h2>
-                <article class="text-center">
-                    <img class="img-fluid img-thumbnail" src="img/kleurenschema.png" alt="" />
-                </article>
+
+            <!-- IMAGE -->
+            <div class="col-md-6 mb-5">
+                <div class="image-card text-center p-3">
+                    <h3 class="mb-3">Kleurenschema</h3>
+                    <img src="img/kleurenschema.png" class="img-fluid rounded shadow" alt="Kleurenschema">
+                </div>
             </div>
         </div>
 
-        <div class="row mt-5">
-            <div class="col-md-3">
-                <article class="text-center mt-3">
-                    <img src="img/Home.png" class=" img-fluid img-thumbnail" alt="">
-                </article>
+        <!-- PREVIEWS -->
+        <h2 class="text-center fw-bold mb-4">Oude Portfolio Pagina’s</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="preview-card">
+                    <img src="img/Home.png" class="img-fluid rounded" alt="Home Preview">
+                </div>
             </div>
-            <div class="col-md-3">
-                <article class="text-center mt-3">
-                    <img src="img/projects.png" class=" img-fluid img-thumbnail" alt="">
-                </article>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="preview-card">
+                    <img src="img/projects.png" class="img-fluid rounded" alt="Projects Preview">
+                </div>
             </div>
-            <div class="col-md-3">
-                <article class="text-center mt-3">
-                    <img src="img/about-me.png" class=" img-fluid img-thumbnail" alt="">
-                </article>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="preview-card">
+                    <img src="img/about-me.png" class="img-fluid rounded" alt="About Me Preview">
+                </div>
             </div>
-            <div class="col-md-3">
-                <article class="text-center mt-3">
-                    <img src="img/contacts.png" class=" img-fluid img-thumbnail" alt="">
-                </article>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="preview-card">
+                    <img src="img/contacts.png" class="img-fluid rounded" alt="Contact Preview">
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- FOOTER -->
+    <footer class="text-center py-3 footer">
+        © 2025 Shayan Jhinkoe – Portfolio Eerste Jaar
+    </footer>
 
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

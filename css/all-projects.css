@@ -1,19 +1,120 @@
-*{
+/* ----------------------------- */
+/* GLOBAL SETTINGS */
+/* ----------------------------- */
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
-   
+    font-family: "Poppins", sans-serif;
 }
 
-:root{
-   --background-main: rgb(171, 177, 245);
+:root {
+    --bg-main: #0d1117;
+    --bg-card: #161b22;
+    --text-light: #d9e1ff;
+    --text-muted: #8892b0;
+
+    --primary: #4361ee;
+    --primary-alt: #3a0ca3;
+    --accent: #4cc9f0;
 }
 
-.bg{
-    background-image: linear-gradient(blue, black);
+body {
+    background: var(--bg-main);
+    color: var(--text-light);
 }
 
-body{
-    background-color: var(--background-main);
+/* ----------------------------- */
+/* NAVBAR */
+/* ----------------------------- */
+
+.nav-gradient {
+    background: linear-gradient(135deg, var(--primary-alt), var(--primary));
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+}
+
+/* ----------------------------- */
+/* PAGE HEADER */
+/* ----------------------------- */
+
+.page-header {
+    padding: 60px 20px;
+    background: radial-gradient(circle, rgba(67,97,238,0.2), transparent 70%);
+}
+
+.page-header p {
+    line-height: 1.6;
+}
+
+/* ----------------------------- */
+/* PROJECT IMAGE & BUTTONS */
+/* ----------------------------- */
+
+.project-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 18px rgba(76,201,240,0.4);
+    margin-bottom: 15px;
+}
+
+.btn-main {
+    background: var(--accent);
+    color: black;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 0 14px rgba(76,201,240,0.6);
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-main:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 0 18px rgba(67,97,238,0.7);
+}
+
+.btn-sm {
+    padding: 6px 16px;
+    font-size: 0.85rem;
+}
+
+/* ----------------------------- */
+/* FOOTER */
+/* ----------------------------- */
+
+.footer {
+    background: var(--bg-card);
+    color: var(--text-muted);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 15px 0;
+}
+
+/* ----------------------------- */
+/* RESPONSIVE */
+/* ----------------------------- */
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    .project-img {
+        max-width: 90%;
+    }
+    .btn-main {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
 }
